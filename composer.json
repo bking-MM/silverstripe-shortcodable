@@ -1,5 +1,5 @@
 {
-    "name": "restruct/silverstripe-shortcodable",
+    "name": "bking-mm/silverstripe-shortcodable",
     "description": "Provides a simple button to insert Shortcodes into the HTMLEditorField + an API for developers to define shortcodes",
     "type": "silverstripe-vendormodule",
     "keywords": [
@@ -17,10 +17,16 @@
             "email": "shea@livesource.co.nz"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bking-mm/silverstripe-simpler.git"
+        }
+    ],
     "require": {
-        "silverstripe/vendor-plugin": "^1.0",
-        "silverstripe/framework": "^4",
-        "restruct/silverstripe-simpler": "^0.1"
+        "silverstripe/vendor-plugin": "^2.0",
+        "silverstripe/framework": "^5.1.0",
+        "bking-mm/silverstripe-simpler": "dev-main"
     },
     "replace": {
         "sheadawson/silverstripe-shortcodable": "*"
@@ -34,5 +40,12 @@
         "expose": [
             "client/dist"
         ]
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
     }
 }
